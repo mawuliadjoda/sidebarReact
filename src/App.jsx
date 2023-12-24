@@ -1,5 +1,6 @@
 import { LayoutDashboard, Home, StickyNote, Layers, Flag, Calendar, LifeBuoy, Settings } from "lucide-react";
 import Sidebar, { SidebarItem } from "./components/Sidebar"
+import PlanSelection from "./components/planSelection/PlanSelection";
 
 function App() {
 
@@ -17,7 +18,12 @@ function App() {
           <SidebarItem icon={<Settings size={20} />} text="Settings" />
           <SidebarItem icon={<LifeBuoy size={20} />} text="Help" />
         </Sidebar>
+
+        <div>
+          <PlanSelection />
+        </div>
       </div>
+
     </>
   )
 }
